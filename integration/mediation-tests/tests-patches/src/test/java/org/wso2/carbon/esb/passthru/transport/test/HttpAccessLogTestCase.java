@@ -57,7 +57,7 @@ public class HttpAccessLogTestCase extends ESBIntegrationTest {
                 new AutomationContext("ESB", TestUserMode.SUPER_TENANT_ADMIN));
         String nhttpFile =
                 FrameworkPathUtil.getSystemResourceLocation() + "artifacts" + separator + "ESB" + separator + "passthru"
-                        + separator + "transport" + separator + "httpaccesslogs" + separator + "nhttp.properties";
+                        + separator + "transport" + separator + "httpaccesslogs" + separator + "access-log.properties";
 
         File srcFile = new File(nhttpFile);
         String carbonHome = System.getProperty(ServerConstants.CARBON_HOME);
